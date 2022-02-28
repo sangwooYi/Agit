@@ -1,0 +1,31 @@
+{
+  "intro" : {
+    "name" : "소개 페이지",
+    "hidden" : false,
+    "path" : "/",
+    "icon" : "el-icon-link",
+    "children" : []
+  },
+  "customercenter" : {
+    "name" : "고객 센터",
+    "hidden" : false,
+    "path" : "/customercenter",
+    "icon" : "el-icon-s-order",
+    "children" : []
+  },
+  "schedule" : {
+    "name" : "일정 관리",
+    "hidden" : false,
+    "path" : "/schedule",
+    "icon" : "el-icon-money",
+    "children" : []
+  },
+  "room1" : {
+    "name" : "1번 방",
+    "params" : {
+      "roomId" : "1"
+    },
+    "path" : "/room/1",
+    "icon" : "el-icon-s-order"
+  }
+}

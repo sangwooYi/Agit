@@ -1,0 +1,52 @@
+1. 개발환경
+JDK 11 (v11.0.13)
+Node.js (v16.13.1)
+VS code (v1.64.2)
+IntelliJ (v2021.3.21)
+Gradle
+
+2. 설치 및 실행 방법
+git clone https://lab.ssafy.com/s06-webmobile1-sub2/S06P12A403.git
+
+MySql로 아래와 같이 ssafy_web_db 데이터베이스 생성
+create database ssafy_web_db;
+
+backend-java/src/main/resources위치에 application.properties 파일에서 아래와 같이 설정
+spring.datasource.hikari.username={sql 유저네임}
+spring.datasource.hikari.password={sql 패스워드}
+
+
+cd frontend
+npm frontend
+npm i
+npm run build
+
+cd ../
+cd backend-java
+./gradlew clean build
+cd build/libs
+java -jar {jar 파일명}
+
+
+3. 시연 시나리오
+
+* 인트로 페이지
+  인트로 화면 소개 이후 => 회원가입 / Oauth2 로그인 시연
+  회원 가입에서는 이메일 인증 시연
+
+* 마이 페이지
+  로그인 이후에는 마이페이지로 이동 
+  프로필 이미지, 닉네임 변경 소개
+  아지트 마스코트인 젤리 커스텀 소개
+
+* 팀 / 스케줄 페이지
+  팀 생성 및 멤버 추가 시연
+  게시글 소개 및 일정 등록 -> 그 이후 마이페이지에 등록 되는것 확인
+  멤버와 1:1 채팅
+
+* webRTC 
+  실시간 영상, 채팅
+  배경화면 변경 가능
+  녹화, 캡처 및 드로우 기능 => 저장 시 자동으로 팀 게시판에 등록 
+  
+

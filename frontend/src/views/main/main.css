@@ -1,0 +1,101 @@
+/* 공통으로 적용되어야할 css */
+@media (max-width: 700px) {
+  .main-container {
+    height: calc(100% - 275px) !important;
+  }
+}
+
+#app, .main-wrapper {
+  height: 100%;
+  display: block !important;
+}
+
+.el-row.main-header {
+  width: 100%;
+  display: block;
+  max-width: 100%;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+  border-bottom: 1px solid #dcdfe6;
+  z-index: 5;
+}
+
+.el-row.main-sidebar {
+  height: 100%;
+  display: inline-block;
+}
+
+.main-container {
+  height: calc(100% - 180px);
+}
+
+.el-row.main-footer {
+  z-index: 1;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+  border-top: 1px solid #dcdfe6;
+}
+
+.el-dialog {
+  transform: translateY(-50%) !important;
+  top: 50%;
+  border-radius: 15px;
+  border: 1px solid #808080;
+  /* margin-top: 20vh; */
+  background-color: white !important;
+}
+
+.el-dialog > .el-dialog__header {
+  background-color: #abdfd4;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  border-bottom: 1px solid #808080;
+  height: 15px;
+  color: white;
+  text-shadow:
+    -1px -1px 0 #808080,
+    1px -1px 0 #808080,
+    -1px 1px 0 #808080,
+    1px 1px 0 #808080;
+}
+
+.el-dialog > .el-dialog__header > span {
+  font-size: 20px;
+  font-weight: bolder;
+  position: absolute;
+  top: 2px;
+  left: 20px;
+
+}
+
+.el-dialog > .el-dialog__header > .el-dialog__headerbtn {
+  position: absolute;
+  top: 3px;
+  right: 20px;
+  padding: 0;
+}
+
+.el-dialog > .el-dialog__header > .el-dialog__headerbtn > .el-dialog__close {
+  /* border: 1px solid #dd5a4e; */
+  border-radius: 50%;
+  background-color: #ff6053;
+  color: black;
+  font-size: 10px;
+  text-align: center;
+}
+
+.el-dialog > .el-dialog__header > .el-dialog__headerbtn > .el-dialog__close:hover {
+  color: white;
+  transition: 0.2s;
+}
+
+.el-overlay {
+  background-color: rgba(0,0,0,.5) !important;
+  animation: unfoldIn 0.1s cubic-bezier(.165,.84,.44,1) forwards;
+  -webkit-animation: unfoldIn 0.1s cubic-bezier(.165,.84,.44,1) forwards;
+}
+
+.el-overlay-dialog {
+  background-color: rgba(0,0,0,.5) !important;
+
+}
